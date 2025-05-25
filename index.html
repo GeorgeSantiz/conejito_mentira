@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Conejito y la Mentira</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>El Conejito y la Mentira</h1>
+        <div class="story">
+            <!-- Página 1: Introducción al problema -->
+            <div id="page1" class="page">
+                <h2>Capítulo 1: El Conejito y su Mentira</h2>
+                <img src="conejo1.jpg" alt="Conejito preocupado" class="story-image">
+                <p>Había una vez un conejito llamado Pepito, que vivía en un pequeño bosque. Un día, Pepito rompió una maceta de flores de su mamá. Cuando su mamá le preguntó, él dijo: "No fui yo".</p>
+                <button onclick="nextPage(2)">Siguiente</button>
+            </div>
+
+            <!-- Página 2: El mal sentimiento por mentir -->
+            <div id="page2" class="page hidden">
+                <h2>Capítulo 2: El Sentimiento de Pepito</h2>
+                <img src="conejo_triste.png" alt="Conejito triste" class="story-image">
+                <p>Después de decir la mentira, Pepito se sintió muy mal. No podía dejar de pensar en lo que había hecho. "¿Por qué dije eso?", pensó. "Me siento tan triste."</p>
+                <button onclick="nextPage(3)">Siguiente</button>
+            </div>
+
+            <!-- Página 3: Reflexión y cambio -->
+            <div id="page3" class="page hidden">
+                <h2>Capítulo 3: La Reflexión de Pepito</h2>
+                <img src="conejo_reflexion.png" alt="Conejito pensando" class="story-image">
+                <p>Pepito decidió hablar con su mamá y contarle la verdad. "Mamá, yo rompí la maceta", dijo. "Lo siento mucho, no quería mentir."</p>
+                <button onclick="nextPage(4)">Siguiente</button>
+            </div>
+
+            <!-- Página 4: Perdón y lección aprendida -->
+            <div id="page4" class="page hidden">
+                <h2>Capítulo 4: El Perdón de Mamá</h2>
+                <img src="conejo_perdon.png" alt="Conejito con mamá" class="story-image">
+                <p>La mamá de Pepito lo abrazó y le dijo: "Te perdono, Pepito. Es muy valiente decir la verdad. Ahora sabemos que podemos confiar en ti. Aprendiste una gran lección sobre la honestidad."</p>
+                <button onclick="endStory()">Fin</button>
+            </div>
+
+            <!-- Página final: Reflexión para el niño -->
+            <div id="end" class="page hidden">
+                <h2>Lección Final</h2>
+                <p>Y así, Pepito aprendió que siempre es mejor decir la verdad, incluso si comete un error. Porque cuando eres honesto, las personas pueden confiar en ti y te sentirás bien contigo mismo.</p>
+                <img src="conejo_feliz.jpg" alt="Conejito feliz" class="story-image">
+                <button onclick="startOver()">Volver a empezar</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
